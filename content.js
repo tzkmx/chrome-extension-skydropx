@@ -14,9 +14,10 @@ function detectQuoteForm() {
         if (!node.querySelector) return
 
         if(!['SCRIPT'].includes(node.nodeName)) {
-          logger({ node }, node.nodeName, node.textContent.trim())
+          const { attributes, id, type, value, checked, nodeName, textContent } = node
+          logger(node.nodeName, { attributes, id, type, value, checked, nodeName, textContent }, node.textContent.trim())
         }
-        
+
         const createForm = node.querySelector('#drawer-form')
         if (createForm) {
           logger({ found: createForm })
