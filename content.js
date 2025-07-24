@@ -13,12 +13,13 @@ function detectQuoteForm() {
       mutation.addedNodes.forEach(node => {
         if (!node.querySelector) return
 
-        logger({ node }, node.nodeName)
-
+        if(!['SCRIPT'].includes(node.nodeName)) {
+          logger({ node }, node.nodeName, node.textContent.trim())
+        }
+        
         const createForm = node.querySelector('#drawer-form')
         if (createForm) {
           logger({ found: createForm })
-          // [0,1,2,3,4,5].forEach(() => handleFormTweaks(createForm))
           wait(2000).then(() => handleFormTweaks(createForm))
         }
         // debug('Not found drawer form') 
