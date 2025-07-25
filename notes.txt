@@ -1,0 +1,38 @@
+form#drawer-form
+https://app.skydropx.com/es-MX/quotations/new
+input#shipment_address_from_attributes_email
+input#email_to_
+#shipment_address_from_attributes_phone_country_code_text
+
+
+numero de guía
+nombre
+estatus
+
+dhl
+FedEx
+estafeta
+
+OK
+en proceso
+en camino
+entregada
+
+señales alerta
+se avisa
+
+
+- Quitar acentos
+- Copiar correo
+- Checar codigo internacional numeros
+- Referencias (Casa/Interior con porton)
+
+- Listado paqueterías: ocultar las que no interesan
+- Listado de envíos, quitar enlace de Seguro
+
+
+Aun peor:
+https://app.skydropx.com/order_wizard/addresses
+
+- acá está el seguro:
+https://app.skydropx.com/order_wizard/Mp3CWWvAcTwSTMqDFiy5kZK6/edit/choosen_rate

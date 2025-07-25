@@ -2,8 +2,8 @@
   "manifest_version": 3,
   "name": "SkyDropX Quote Form Tweaks",
   "author": "Jesus Enrique Franco Martinez",
-  "version": "0.1.34",
-  "description": "Runs code when visiting a specific URL",
+  "version": "0.1.50",
+  "description": "Runs accesibility helpers when visiting forms",
   
   "permissions": [
     "activeTab"
@@ -11,8 +11,11 @@
   
   "content_scripts": [
     {
-      "matches": ["https://app.skydropx.com/es-MX/*"],
-      "js": ["content.js"],
+      "matches": ["https://app.skydropx.com/*"],
+      "js": [
+        "playwright-like.js",
+        "content.js"
+      ],
       "run_at": "document_end"
     }
   ]
