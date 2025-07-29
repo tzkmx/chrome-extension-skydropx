@@ -13,6 +13,7 @@
     {
       "matches": ["https://app.skydropx.com/*"],
       "js": [
+        "lib/xstate.umd.min.js",
         "playwright-like.js",
         "content.js"
       ],
