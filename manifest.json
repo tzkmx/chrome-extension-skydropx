@@ -15,6 +15,7 @@
       "js": [
         "lib/xstate.umd.min.js",
         "playwright-like.js",
+        "actor.js",
         "content.js"
       ],
       "run_at": "document_end"
