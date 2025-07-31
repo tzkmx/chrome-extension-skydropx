@@ -1,4 +1,4 @@
-const { createMachine } = XState;
+const { createMachine } = XState
 
 /**
  * A state machine that wraps a MutationObserver to watch for DOM changes.
@@ -22,7 +22,7 @@ const domObserverMachine = createMachine({
               for (const node of mutation.addedNodes) {
                 if (node.nodeType === Node.ELEMENT_NODE) {
                   // Send the event to the parent machine that spawned this actor
-                  callback({ type: 'DOM.NODE_ADDED', payload: { node } });
+                  callback({ type: 'DOM.NODE_ADDED', payload: { node } })
                 }
               }
             }
@@ -32,14 +32,14 @@ const domObserverMachine = createMachine({
           observer.observe(document.body, {
             childList: true,
             subtree: true
-          });
+          })
 
           // Return a cleanup function that XState will call when this actor is stopped
           return () => {
-            observer.disconnect();
+            observer.disconnect()
           };
         }
       }
     }
   }
-});
+})
