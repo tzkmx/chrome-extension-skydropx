@@ -12,7 +12,9 @@ This document provides essential context for AI models interacting with this pro
 * **Languages:** JavaScript (ES6+).
 * **Frameworks & Runtimes:** Chrome Extension environment (Manifest V3).
 * **Databases:** Not applicable.
-* **Key Libraries/Dependencies:** None. The project uses vanilla JavaScript.
+* **Key Libraries/Dependencies:**
+    * **xstate v5:** For managing complex state logic.
+    * **Internal Libraries:** Custom utility scripts are located in the `lib/` directory.
 * **Package Manager(s):** Not applicable.
 
 ## 3. Architectural Patterns
@@ -20,9 +22,11 @@ This document provides essential context for AI models interacting with this pro
 * **Overall Architecture:** This is a browser extension that injects content scripts into a specific website. The architecture is event-driven, using `MutationObserver` to detect changes in the DOM and trigger actions.
 * **Directory Structure Philosophy:**
     * `content.js`: The main content script that interacts with the SkyDropX website.
-    * `playwright-like.js`: A utility script that provides functions to simulate user input (typing, pasting) in a way that is compatible with modern web frameworks like React.
+    * `lib/`: Contains internal utility libraries.
+        * `playwright-like.js`: A utility script that provides functions to simulate user input (typing, pasting) in a way that is compatible with modern web frameworks like React.
     * `manifest.json`: The Chrome extension manifest file, which defines the extension's properties and permissions.
     * `popup.html`: The HTML file for the extension's popup.
+    * `popup.js`: The JavaScript file for the extension's popup.
     * `notes.txt`: Contains developer notes and ideas for future improvements.
     * `.gitignore`: Specifies files to be ignored by Git.
 
