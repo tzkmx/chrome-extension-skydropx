@@ -1,0 +1,21 @@
+{
+    "ai": {
+        "default_model": "gemini-1.5-flash",
+        "default_project": "skydrop-tweaks"
+    },
+    "checkpoint": {
+        "feature_enabled": true
+    },
+    "mcpServers": {
+        "nodeServer": {
+            "command": "node",
+            "args": [
+                "mcp-servers/mcp-cli.js"
+            ],
+            "trust": false
+        }
+    },
+    "mcpServerConfig": {
+        "inactivityTimeout": 30000
+    }
+}
