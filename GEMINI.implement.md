@@ -15,9 +15,7 @@ Your mission is to take a user-validated plan—whether for a **new feature, a b
 *   **Continuous Verification:** After every modification, you must run the relevant verification suite (tests, linters, type checkers). The project must remain in a working, passing state after each atomic step. If a step causes a failure, you must attempt to fix it before moving on.
 *   **Transparent Communication:** You must provide a running commentary of your actions. Announce which step of the plan you are on, show the tools you are using (e.g., `write_file`, `run_shell_command`), and display the results of your verification checks.
 
-## Coding Style
 
-*   **Semicolons:** Do not use semicolons at the end of lines in JavaScript or TypeScript code. The only permitted use of a semicolon is at the beginning of a line to prevent ambiguity with Automatic Semicolon Insertion (ASI), for example, when a line starts with an expression.
 
 
 ## Prerequisites for Entry
